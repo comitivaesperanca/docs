@@ -1,0 +1,23 @@
+site_name: Comitiva Esperança - Docs
+site_url: https://comitiva-esperanca.github.io
+theme:
+  name: material
+  repo_url: https://github.com/comitivaesperanca/
+  repo_name: Comitiva Esperança 
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - toc.integrate
+  - toc.follow
+  pallet:
+    primary: yellow
+    accent: red
+  language: pt-BR
+  logo: https://avatars.githubusercontent.com/u/129684075?s=200&v=4
+  favicon: https://avatars.githubusercontent.com/u/129684075?s=200&v=4
+  plugins: 
+    - search:
+      Lang: pt-BR
+    - markdownextradata
+  copyright: Comitiva Esperança - um time [<pantanal.dev>](https://pantanal.dev) - 2023
