@@ -1,23 +1,38 @@
-site_name: Comitiva Esperança - Docs a
-site_url: https://comitiva-esperanca.github.io
+nav:
+  - 🏡 Home: ./index.md
+
+
+site_name: Comitiva Esperança
+repo_url: https://github.com/comitivaesperanca/docs/
+repo_name: comitivaesperanca
+edit_uri: edit/main/docs/
+
 theme:
+  logo: https://avatars.githubusercontent.com/u/129684075
   name: material
-  repo_url: https://github.com/comitivaesperanca/
-  repo_name: Comitiva Esperança 
   features:
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.sections
-  - toc.integrate
-  - toc.follow
-  pallet:
-    primary: yellow
-    accent: red
-  language: pt-BR
-  logo: https://avatars.githubusercontent.com/u/129684075?s=200&v=4
-  favicon: https://avatars.githubusercontent.com/u/129684075?s=200&v=4
-  plugins: 
-    - search:
-      Lang: pt-BR
-    - markdownextradata
-  copyright: Comitiva Esperança - um time [<pantanal.dev>](https://pantanal.dev) - 2023
+    - navigation.tabs
+    - navigation.tabs.sticky
+ 
+
+  extra_css:
+    - ./stylesheet/extra.css
+
+extra:
+  generator: true
+
+plugins:
+  - git-revision-date
+  - search
+  - mkdocs-video:
+      video_autoplay: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - footnotes

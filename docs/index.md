@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+# Comitiva Esperança 🌟
+Organização destinada ao time Comitiva Esperança do programa [pantanal.dev](https://pantanal.dev) 🚀, um programa de capacitação imersiva em tecnologias inovadoras que tem como objetivo capacitar e apresentar oportunidades de trabalho remoto no mercado financeiro nacional 💼. <br>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Organização
+Estamos organizando o projeto atraves do [Github Projects](https://github.com/orgs/comitivaesperanca/projects/2).
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Participantes 🙋‍♀️🙋‍♂️
+- Vitor Lameirão 
+- Eduardo Godoy
+- Arthur Ramires
+- Maycon Felipe Mota

@@ -1,0 +1,18 @@
+root {
+  --md-primary-fg-color:        #d1b900;
+  --md-primary-fg-color--light: #d1b900;
+  --md-primary-fg-color--dark:  #d1b900;
+}
+
+@font-face {
+  font-family: "DINPro-Regular";
+  src: "https://carreiras.raizen.com.br/wp-content/uploads/2022/05/DINPro-Regular.woff";
+}
+
+:root {
+--md-text-font: "DINPro-Regular"; 
+}
+
+:root {
+--md-code-font: "DINPro-Regular";
+}
