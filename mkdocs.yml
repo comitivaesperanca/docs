@@ -24,8 +24,7 @@ extra:
 plugins:
   - git-revision-date
   - search
-  - mkdocs-video:
-      video_autoplay: false
+  
 markdown_extensions:
   - admonition
   - pymdownx.details
