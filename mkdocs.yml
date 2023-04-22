@@ -1,7 +1,3 @@
-nav:
-  - 🏡 Home: ./index.md
-
-
 site_name: Comitiva Esperança
 repo_url: https://github.com/comitivaesperanca/docs/
 repo_name: comitivaesperanca
@@ -10,14 +6,21 @@ edit_uri: edit/main/docs/
 theme:
   logo: https://avatars.githubusercontent.com/u/129684075
   name: material
+      
+  extra_css:
+    - extra.css
+
+  palette: 
+    primary: 'orange'
+    accent: 'orange'
+    primary-bg: 'white'
   features:
     - navigation.tabs
     - navigation.tabs.sticky
  
-
-  extra_css:
-    - ./stylesheet/extra.css
-
+  font:
+    text: Nunito
+    code: Fira Code
 extra:
   generator: true
 
@@ -34,4 +37,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - tables
   - footnotes
+  - toc:
+      title: Índice

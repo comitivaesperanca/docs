@@ -4,6 +4,12 @@ root {
   --md-primary-fg-color--dark:  #d1b900;
 }
 
+[data-md-color-scheme="youtube"] {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}
+
 @font-face {
   font-family: "DINPro-Regular";
   src: "https://carreiras.raizen.com.br/wp-content/uploads/2022/05/DINPro-Regular.woff";
