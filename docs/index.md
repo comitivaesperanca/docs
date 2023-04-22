@@ -57,6 +57,15 @@ O time Comitiva Esperança é composto por 4 pessoas, de áreas multidisciplinar
         <a href="https://www.linkedin.com/in/arthur-ramires-rodrigues-neto-9687a1193/"></a></td>
 
 
+  <td align="center"><a href="https://www.linkedin.com/in/andrezzaandrade//"><img onmouseover="opaqImg(this)" onmouseout="normalImg(this)"
+        style="border-radius: 50%; opacity: 1;" src="https://media.licdn.com/dms/image/C4D03AQHxWdRpyFIfcw/profile-displayphoto-shrink_800_800/0/1661129737600?e=1687392000&v=beta&t=AYX5twC6sN4zh4R2NREZv8j3m0--BXnISCQOFJb25wc" alt=""
+        width="250px;">
+        <br><sub><b>Andrezza Andrade</b> <br>
+        Neoway<br>
+        <b>👑 Mentora</b>
+
+        <a href="https://www.linkedin.com/in/andrezzaandrade/"></a></td>
+
     </tr>
   </tbody>
   </table>
