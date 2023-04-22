@@ -9,11 +9,16 @@ hide:
 
 Organização destinada ao time Comitiva Esperança do programa [pantanal.dev](https://pantanal.dev) 🚀, um programa de capacitação imersiva em tecnologias inovadoras que tem como objetivo capacitar e apresentar oportunidades de trabalho remoto no mercado financeiro nacional 💼. <br>
 
+## Sobre o projeto
+
+TBD
+
 ## Organização
 
 Estamos organizando o projeto atraves do [Github Projects](https://github.com/orgs/comitivaesperanca/projects/2).
 
 ## Participantes 🙋‍♀️🙋‍♂️
+
 O time Comitiva Esperança é composto por 4 pessoas, de áreas multidisciplinares. Todos atuam como Data Scientist porém exercem o papel primário descrito abaixo:
 <div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
     <tbody>
@@ -53,5 +58,10 @@ O time Comitiva Esperança é composto por 4 pessoas, de áreas multidisciplinar
 
 
     </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
 
-</tbody></table></div></div>
+## Tabela de Versionamento
+TBD
