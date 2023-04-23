@@ -5,6 +5,12 @@ O time Comitiva Esperança está utilizando Docker para a criação de container
 A utilização de Dockers permite que o time possa trabalhar em ambientes isolados, e que possam ser facilmente replicados em outros ambientes.
 A principal possibilidade é a facilidade em publicar o projeto em servidores Cloud, como o Azure, AWS, Google Cloud, etc.
 
+# Arquitetura
+A arquitetura do projeto é composta por 3 containers, sendo eles:
+- **Data Plataform**: Container responsável por manter ferramentas de Data Science, como Jupyter, Airflow, Label Studio, etc.
+- **Backend**: Container responsável por manter a API do projeto, que será utilizada para a comunicação com o Frontend.
+- **Frontend**: Container responsável por manter a interface do projeto, que será utilizada para a interação com o usuário.
+![Arquitetura](arquitetura.png)
 
 ## [Apache Airflow](https://airflow.apache.org/)
 O Apache Airflow é uma plataforma de orquestração de fluxos de trabalho (workflow) de código aberto que permite aos usuários programar, agendar e monitorar tarefas em fluxos de trabalho complexos.
