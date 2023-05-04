@@ -7,17 +7,19 @@ hide:
 
 # Comitiva Esperança 🌟
 
-Organização destinada ao time Comitiva Esperança do programa [pantanal.dev](https://pantanal.dev) 🚀, um programa de capacitação imersiva em tecnologias inovadoras que tem como objetivo capacitar e apresentar oportunidades de trabalho remoto no mercado financeiro nacional 💼. <br>
+Organização destinada ao time Comitiva Esperança do programa [</pantanal.dev\>](https://pantanal.dev) 🚀, um programa de capacitação imersiva em tecnologias inovadoras que tem como objetivo capacitar e apresentar oportunidades de trabalho remoto no mercado financeiro nacional 💼. <br>
 
-## Sobre o projeto
 
-TBD
+  <center>[![pantanal_dev](assets/images/pantanal_dev.png)](https://youtu.be/gl2qIX2CAr0)</center>
 
-## Organização
 
-Estamos organizando o projeto atraves do [Github Projects](https://github.com/orgs/comitivaesperanca/projects/2).
+## **Sobre o desafio [</pantanal.dev\>](https://pantanal.dev)**
 
-## Participantes 🙋‍♀️🙋‍♂️
+Entre os dias **01/04/2023** e **20/05/2023**, foi realizado o módulo Arara Azul, focado em **Machine Learning**, do programa [</pantanal.dev\>](https://pantanal.dev), um programa desenvolvido por professores da Faculdade de Computação da UFMS em parceira com as empresas [B3 a bolsa do Brasil](https://www.linkedin.com/company/b3_oficial/), [BLK](https://www.linkedin.com/company/blk-b3/), [PDtec](https://www.linkedin.com/company/pdtec-b3/) e [Neoway](https://www.linkedin.com/company/neoway/). <br>
+Durante esse período foi proposto a nós do time Comitiva Esperança e a outras 9 equipes, o desafio de ***"Treinar um algoritmo de Machine Learning capaz de classificar o sentimento de textos de notícias de Jornais ou Redes Sociais em (Positivo, Neutro ou Negativo)"***. <br> 
+Cabia a cada time definir e construir um produto queresolva um problema real e entregue valor aos seus usuários com esse modelo proposto. <br>
+
+## **Participantes** 🙋‍♀️🙋‍♂️
 
 O time Comitiva Esperança é composto por 4 pessoas, de áreas multidisciplinares. Todos atuam como Data Scientist porém exercem o papel primário descrito abaixo:
 <div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
@@ -73,4 +75,26 @@ O time Comitiva Esperança é composto por 4 pessoas, de áreas multidisciplinar
   </div>
 
 ## Tabela de Versionamento
-TBD
+<div class="md-typeset__scrollwrap">
+  <div class="md-typeset__table">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Versão</th>
+          <th>Descrição</th>
+          <th>Autor(es)</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>03/05/2023</td>
+        <td>1.0</td>
+        <td>Criação do documento</td>
+        <td><a href="https://www.linkedin.com/in/vitor-lameirao/">Vitor Lameirão</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
