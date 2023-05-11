@@ -10,3 +10,28 @@ Essa insegurança e incerteza causada no mercado está muito relacionada com not
 
 Como mostrado no gráfico, o mercado da soja é muito imprevisível, principalmente quando analisamos o seu preço de venda, por isso, qualquer ferramenta que apoie as decisões de compra e vendas no mercado da soja é totalmente útil e valiosa para as pessoas que realizam essas operações. <br>
 Nesse sentido que o **Radar da Soja** surge para auxiliar milhares de pessoas que dependem desse mercado para gerar lucro pessoal e para suas empresas. <br>
+
+## Tabela de Versionamento
+<div class="md-typeset__scrollwrap">
+  <div class="md-typeset__table">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Versão</th>
+          <th>Descrição</th>
+          <th>Autor(es)</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>10/05/2023</td>
+        <td>1.0</td>
+        <td>Criação do documento</td>
+        <td><a href="https://www.linkedin.com/in/vitor-lameirao/">Vitor Lameirão</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

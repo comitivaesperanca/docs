@@ -15,3 +15,28 @@ teste <br>
 teste <br>
 ### **Pesquisa sobre a percepção de notícias do mercado da Soja**
 teste <br>
+
+## Tabela de Versionamento
+<div class="md-typeset__scrollwrap">
+  <div class="md-typeset__table">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Versão</th>
+          <th>Descrição</th>
+          <th>Autor(es)</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>10/05/2023</td>
+        <td>1.0</td>
+        <td>Criação do documento</td>
+        <td><a href="https://www.linkedin.com/in/vitor-lameirao/">Vitor Lameirão</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

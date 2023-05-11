@@ -8,6 +8,10 @@ nav:
   - Produto:
     - Contexto do Mercado: Produto/contexto_mercado.md
     - Análise do Mercado: Produto/analisando_mercado.md
+    - Personas: Produto/personas.md
+    - Visão do Produto: Produto/visao_produto.md
+    - Brainstorming de Funcionalidades: Produto/brainstorming.md
+    - Prioridade de Funcionalidades: Produto/prioridade_func.md
 
 theme:
   logo: https://avatars.githubusercontent.com/u/129684075
