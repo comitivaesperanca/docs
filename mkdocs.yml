@@ -4,7 +4,9 @@ repo_name: comitivaesperanca
 edit_uri: edit/main/docs/
 
 nav:
-  - Home: Organizacao/organizacao.md
+  - Home: index.md
+  - Organização: 
+    - Metodologias: Organizacao/metodologias.md
   - Produto:
     - Contexto do Mercado: Produto/contexto_mercado.md
     - Análise do Mercado: Produto/analisando_mercado.md
