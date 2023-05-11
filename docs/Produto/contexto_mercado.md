@@ -9,4 +9,4 @@ Essa insegurança e incerteza causada no mercado está muito relacionada com not
 <center> *Acima encontra-se dados do CEPEA sobre a variação do preço da soja em 3 anos.* </center> <br><br>
 
 Como mostrado no gráfico, o mercado da soja é muito imprevisível, principalmente quando analisamos o seu preço de venda, por isso, qualquer ferramenta que apoie as decisões de compra e vendas no mercado da soja é totalmente útil e valiosa para as pessoas que realizam essas operações. <br>
-Nesse sentido que o **Radar da Soja** surge para auxiliar milhares de pessoas que dependem desse mercado para gerar lucro pessoal e para suas empresas. 
+Nesse sentido que o **Radar da Soja** surge para auxiliar milhares de pessoas que dependem desse mercado para gerar lucro pessoal e para suas empresas. <br>
