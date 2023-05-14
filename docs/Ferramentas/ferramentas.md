@@ -1,11 +1,11 @@
 
-# Ferramentas
+## Ferramentas
 
 O time Comitiva Esperança está utilizando Docker para a criação de containers, e o Docker Compose para a criação de containers multiplataforma.
 A utilização de Dockers permite que o time possa trabalhar em ambientes isolados, e que possam ser facilmente replicados em outros ambientes.
 A principal possibilidade é a facilidade em publicar o projeto em servidores Cloud, como o Azure, AWS, Google Cloud, etc.
 
-# Arquitetura
+## Arquitetura
 
 A arquitetura do projeto é composta por 3 containers, sendo eles:
 
