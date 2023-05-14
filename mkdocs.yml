@@ -14,7 +14,12 @@ nav:
     - Visão do Produto: Produto/visao_produto.md
     - Brainstorming de Funcionalidades: Produto/brainstorming.md
     - Prioridade de Funcionalidades: Produto/prioridade_func.md
-
+  - Desenvolvimento:
+    - Ferramentas: Ferramentas/ferramentas.md
+    - Dados: Dados/index.md
+    - Frontend: Frontend/index.md
+    - Backend: Backend/index.md
+    - Infraestrutura: Infraestrutura/index.md
 theme:
   logo: https://avatars.githubusercontent.com/u/129684075
   name: material
