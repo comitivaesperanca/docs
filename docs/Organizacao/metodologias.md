@@ -1,5 +1,3 @@
-
-# Metodologias
 Nesta página está descrita todas as metodologias utilizadas para o gerenciamento do projeto **Radar da Soja**, considerando isso, foram utilizadas algumas práticas de desenvolvimento das seguintes metodologias ágeis de desenvolvimento de software: *Scrum*, *Kanban* e *XP*   . <br>
 
 ## **Scrum**
