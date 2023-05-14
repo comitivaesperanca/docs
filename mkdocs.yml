@@ -3,6 +3,23 @@ repo_url: https://github.com/comitivaesperanca/docs/
 repo_name: comitivaesperanca
 edit_uri: edit/main/docs/
 
+nav:
+  - Home: index.md
+  - Organização: 
+    - Metodologias: Organizacao/metodologias.md
+  - Produto:
+    - Contexto do Mercado: Produto/contexto_mercado.md
+    - Análise do Mercado: Produto/analisando_mercado.md
+    - Personas: Produto/personas.md
+    - Visão do Produto: Produto/visao_produto.md
+    - Brainstorming de Funcionalidades: Produto/brainstorming.md
+    - Prioridade de Funcionalidades: Produto/prioridade_func.md
+  - Desenvolvimento:
+    - Ferramentas: Ferramentas/ferramentas.md
+    - Dados: Dados/index.md
+    - Frontend: Frontend/index.md
+    - Backend: Backend/index.md
+    - Infraestrutura: Infraestrutura/index.md
 theme:
   logo: https://avatars.githubusercontent.com/u/129684075
   name: material
