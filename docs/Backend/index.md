@@ -9,7 +9,7 @@ Com base nesse conhecimento, foi implementado um modelo de domínio que represen
 
 Com a aplicação do DDD, foi possível desenvolver um sistema mais estruturado e alinhado com o domínio de negócio, facilitando a manutenção e a evolução do projeto ao longo do tempo.
 
-<center> ![capa_ddd](\assets\images\capa_ddd.png) </center>
+<center> ![capa_ddd](images\capa_ddd.png) </center>
 
 ## **Web Service**
 
