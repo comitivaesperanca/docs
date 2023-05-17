@@ -3,7 +3,7 @@ A partir de uma análise abrangente do mercado da soja, surgiram muitos *insight
 
 Essa Matriz CSD não só nos ajudou a esclarecer nossas ideias, mas também serviu como base para as pesquisas de mercado que conduzimos e para toda a descoberta do **Radar da Soja**.
 
-![grafico_variacao_soja](\assets\images\matriz_csd_miro.jpg)
+![grafico_variacao_soja](images\matriz_csd_miro.jpg)
 
 <center> *Acima está ilustrado nossa Matriz CSD criada na ferramenta MIRO.* </center> <br><br>
 

@@ -4,7 +4,7 @@ repo_name: comitivaesperanca
 edit_uri: edit/main/docs/
 
 nav:
-  - Home: index.md
+  - Home: Home/index.md
   - Organização: 
     - Metodologias: Organizacao/metodologias.md
   - Produto:
