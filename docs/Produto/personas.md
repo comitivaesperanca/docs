@@ -4,7 +4,7 @@ A criação desse usuário ideal ajuda os criadores desse produto a entender mel
 
 ##**Nossa persona**
 
-<center>![persona](images\persona.png)
+<center>![persona](images/persona.png)
 *Acima está retratada a nossa persona*
 </center>
 
