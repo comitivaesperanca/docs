@@ -4,7 +4,7 @@ O mercado da soja é de extrema importância para a economia brasileira, sendo u
 A exportação da soja representa uma grande parcela das receitas de exportação do Brasil, o que faz com que a volatilidade do mercado da soja tenha um impacto significativo na economia do país. A volatibidade do mercado pode afetar diretamente as operações de compra e venda dessa commodity, essa imprevisibilidade pode gerar incertezas e inseguraças para os dependentes desse mercado quando forem realizar uma operação de compra ou venda da soja. <br><br>
 Essa insegurança e incerteza causada no mercado está muito relacionada com notícias que afetam diretamente o mercado da soja. Informações sobre possíveis condições climáticas impróprias para o cultivo, aumento dos custos de produção, retomada de negociações entre países produtores de soja e, até mesmo pandemias, causam um desconforto no mercado e fazem com que as operações de compra e venda da commodity tenham mais riscos do que o padrão. <br><br>
 
-![grafico_variacao_soja](images\grafico_soja.jpg)
+![grafico_variacao_soja](images/grafico_soja.jpg)
 
 <center> *Acima encontra-se dados do CEPEA sobre a variação do preço da soja em 3 anos.* </center> <br><br>
 
