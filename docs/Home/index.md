@@ -10,7 +10,7 @@ hide:
 Organização destinada ao time Comitiva Esperança do programa [</pantanal.dev\>](https://pantanal.dev) 🚀, um programa de capacitação imersiva em tecnologias inovadoras que tem como objetivo capacitar e apresentar oportunidades de trabalho remoto no mercado financeiro nacional 💼. <br>
 
 
-  <center>[![pantanal_dev](assets/images/pantanal_dev.png)](https://youtu.be/gl2qIX2CAr0)</center>
+  <center>[![pantanal_dev](images/pantanal_dev.png)](https://youtu.be/gl2qIX2CAr0)</center>
 
 
 ## **Sobre o desafio [</pantanal.dev\>](https://pantanal.dev)**

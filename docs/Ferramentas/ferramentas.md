@@ -13,7 +13,7 @@ A arquitetura do projeto é composta por 3 containers, sendo eles:
 - **Backend**: Container responsável por manter a API do projeto, que será utilizada para a comunicação com o Frontend.
 - **Frontend**: Container responsável por manter a interface do projeto, que será utilizada para a interação com o usuário.
 
-![Arquitetura](arquitetura.png)
+![Arquitetura](images/arquitetura.png)
 
 ## [Apache Airflow](https://airflow.apache.org/)
 
