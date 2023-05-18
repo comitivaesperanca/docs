@@ -82,7 +82,3 @@ Algumas vantagens de utilizar o FastAPI são:
 **Documentação automática**: o FastAPI utiliza especificações OpenAPI e Swagger para gerar documentação automática das APIs, facilitando o desenvolvimento e a manutenção de aplicações. <br>
 **Autenticação**: o FastAPI oferece suporte a diversos serviços de autenticação, tornando mais fácil a implementação de políticas de segurança em aplicações. <br>
 **Comunidade ativa**: o FastAPI é mantido por uma comunidade de desenvolvedores ativa e tem suporte de grandes empresas, garantindo sua evolução e melhoria contínuas. <br>
-
-## [React](https://pt-br.reactjs.org/)
-
-TBD

@@ -67,13 +67,62 @@ Foi realizado o deployment da ferramenta Label Studio utilizando o serviço de K
 Após a rotulação dos dados, foi necessário realizar o treinamento do modelo de Machine Learning, para que fosse possível criar o *Motor de Classificação* do Radar da Soja, que é o responsável por classificar as notícias em Positivo, Neutro ou Negativo. Com a necessidade de desenvolvermos um modelo utilizando BERT (através de redes neurais), o time optou por desenvolver um modelo baseline, para servir de efeito de comparação, utilizando o modelo [Naive Bayes Multinomial](https://scikit-learn.org/stable/modules/naive_bayes.html), que é um modelo de classificação probabilístico baseado no teorema de Bayes, que assume que a presença de uma característica em uma classe não está relacionada com a presença de qualquer outra característica.
 
 #### Modelo Naive Bayes Multinomial (Baseline)
-TBD
+O modelo Naive Bayes Multinomial foi escolhido por ser um modelo de classificação probabilístico, que é um modelo simples e rápido, que pode ser utilizado como baseline para comparação com outros modelos mais complexos. <br>
+No Naive Bayes Multinomial, determinamos a probabilidade de uma notícia pertencer a uma classe, baseado na frequência de palavras que aparecem na notícia.  <br>
+Para o treinamento do modelo, foi utilizado o dataset rotulado (421 notícias), sendo separado em 80% para treino (336 notícias) e 20% (101 notícias) para validação.  <br>
+Após o treinamento, foi possível obter o seguinte reporte de classificação:
+
+<figure>
+    <img src="images/modelo_naive_treino.png">
+    <figcaption>Resultado de classificação do modelo no conjunto de teste. (Fonte: Autores, 2023)</figcaption>
+</figure>
+    
+Enquanto que para o conjunto de validação, foi possível obter o seguinte reporte de classificação:
+<figure>
+    <img src="images/modelo_naive_validacao.png">
+    <figcaption>Resultado de classificação do modelo no conjunto de validação. (Fonte: Autores, 2023)</figcaption>
+</figure>
+
+Após o treinamento do modelo, foi possível obter uma acurácia de 0.62 no conjunto de teste, e 0.60 no conjunto de validação, o que mostra que o modelo possui uma boa capacidade de generalização, e que pode ser utilizado como baseline para comparação com outros modelos mais complexos.
 
 #### Modelo BERT
-TBD
+Com a crescente utilização de modelos de Deep Learning para a resolução de problemas de NLP, o time optou por utilizar o modelo BERT, que é um modelo de Deep Learning desenvolvido pelo Google, que possui uma arquitetura baseada em redes neurais, e que possui um desempenho superior a outros modelos de NLP, como o Naive Bayes Multinomial. <br>
+O modelo BERT é utilizado como um modelo pré-treinado, que é treinado em um grande volume de dados, e que pode ser utilizado para resolver problemas de NLP, como classificação de texto, sumarização de texto, entre outros. <br>
+Para a aplicação do modelo no projeto, foi necessário realizar o fine-tuning do modelo, que é o processo de treinar o modelo pré-treinado em um conjunto de dados específico para o problema que se deseja resolver. <br>
+Para o treinamento do modelo, foi utilizado o dataset rotulado (421 notícias), sendo separado em 80% para treino (336 notícias) e 20% (101 notícias) para validação.  <br>
+Após o treinamento, foi possível obter o seguinte reporte de classificação para o conjunto de teste:
+
+
+<figure>
+    <img src="images/treinamento_bert.jpg">
+    <figcaption>Resultado de classificação do modelo no conjunto de teste.(Fonte: Autores, 2023)</figcaption>
+</figure>
+
+<figure>
+    <img src="images/validacao_bert.jpg">
+    <figcaption>Resultado de classificação do modelo no conjunto de teste.(Fonte: Autores, 2023)</figcaption>
+</figure>
+
+#### Considerações sobre o modelo
+Após o treinamento dos modelos, foi possível obter os seguintes resultados:
+
+| Modelo | Acurácia no conjunto de teste | Acurácia no conjunto de validação | Precisão - Validação| Recall - Validação | F1-Score - Validação |
+| --- | --- | --- | --- | --- | --- |
+| Naive Bayes Multinomial | 0.62 | 0.60 | 0.70 | 0.57 | 0.54 |
+| BERT | 0.76 | 0.70 | 0.72 | 0.70 | 0.68 |
+
+Por se tratar de um modelo de Deep Learning, o BERT possui uma acurácia superior ao Naive Bayes Multinomial, que é um modelo de Machine Learning tradicional. <br>
+Entretanto, o modelo BERT possui uma precisão inferior ao Naive Bayes Multinomial, o que pode ser explicado pela quantidade de dados de treinamento.
+Para uma entrega futura, é necessário que o modelo BERT seja treinado com um volume maior de dados, para que seja possível obter uma precisão maior, e que possa ser utilizado no Radar da Soja.
+
+Contundo, é nitido que o modelo BERT possui uma acurácia superior ao Naive Bayes Multinomial, o que mostra que o modelo BERT possui uma capacidade de generalização superior ao Naive Bayes Multinomial, e que pode ser utilizado como modelo de classificação no Radar da Soja.
 
 ### Deploy do modelo
+Para que o modelo possa ser utilizado no Radar da Soja possa ser integrado na plataforma, foi necessário realizar dois deploys do modelo: Integração no Pipeline de ingestão de notícias na plataforma e criação de uma API para que seja feito a interação do modelo. O usuário digitaria o texto da notícia e o modelo retornaria a classificação da notícia, com suas respectivas probabilidades.
+
 #### Pipeline de classificação
-TBD
+Para o Pipeline de classificação, foi incrementar a tarefa já criada para o Airflow, para que ao concluir a ingestão de notícias ao armazenamento, o modelo fosse executado, e que a classificação encaminhada a plataforma através da aplicação Backend. Para atingir esse objetivo, foi necessário incluir os arquivos dos modelos (Para o Naive Bayes Multinomial, foi necessário incluir o arquivo `naive_bayes.pkl`, e para o BERT, foi necessário incluir os arquivos `modelo_soja_rede_neural.pt`).
+
 #### API de classificação
-TBD
+Para que outras aplicações do Radar da Soja pudesse interagir com o modelo, foi necessário criar uma API para que fosse possível realizar a classificação de notícias. Para isso, foi necessário criar uma API utilizando a ferramenta [FastAPI](https://fastapi.tiangolo.com/), que é uma ferramenta de desenvolvimento de APIs de alto desempenho, que utiliza a sintaxe de Python, e que possui uma documentação automática através do Swagger. <br>
+Para a criação da API, foi necessário criar um endpoint que recebesse o texto da notícia, e que retornasse a classificação da notícia, com suas respectivas probabilidades, foi necessário carregar o modelo treinado, e que fosse possível realizar a classificação da notícia. <br>
