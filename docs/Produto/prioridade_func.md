@@ -1,4 +1,4 @@
-Após realizado o *Brainstorming de Funcionalidades*, partimos para a etapa da descoberta do *Radar da Soja* onde priorizamos e defimos quais das funcionalidades idealizadas farão parte do nosso produto. Para isso, utilizamos duas técnicas de priorização muito utilizadas no mercado: a **Matriz MoSCoW** e a **Matriz de Esforço e Impacto**.
+Após realizarmos a fase de **Brainstorming de Funcionalidades**, seguimos para a próxima etapa de descoberta do *Radar da Soja*. Nesta etapa, priorizamos e definimos quais funcionalidades idealizadas farão parte do nosso produto utilizando duas técnicas amplamente utilizadas no mercado: **Matriz MoSCoW** e **Matriz de Esforço e Impacto**.
 
 ## Matriz MoSCoW
 A **Matriz MoSCoW** é uma ferramenta utilizada para ajudar a priorizar as funcionalidades de um produto. A matriz divide os requisitos/funcionalidades em quatro categorias principais: Must Have (deve ter), Should Have (deveria ter), Could Have (poderia ter) e Won't Have (não terá). <br>
