@@ -44,15 +44,18 @@ Na imagem acima, é possível visualizar a DAG desenvolvida para a coleta de dad
 ### Análise exploratória
 Ao concluir a carga incremental do CEPEA, foi possível obter 7639 notícias, desde Julho de 2006 até a presente data, conforme o gráfico abaixo:
 <iframe width=700, height=500 frameBorder=0 src="images/quantidade_noticias_cepea.html"></iframe> 
+<figcaption>Gráfico de notícias coletadas da plataforma CEPEA. <br> (Fonte: Autores, 2023)</figcaption>
 
 Já o Notícias Agricolas, foi possível obter 23.601 notícias, conforme a imagem abaixo:
 <iframe width=700, height=500 frameBorder=0 src="images/quantidade_noticias_agricolas.html"></iframe> 
+<figcaption>Gráfico de notícias coletadas do portal Notícias Agricolas. <br> (Fonte: Autores, 2023)</figcaption>
 
 Para iniciar o tratamento das notícias, de maneira que fosse possível filtrar apenas as notícias referentes a soja, foi necessário realizar uma análise exploratória dos dados, para entender quantas notícias houvesse Soja mencionada, ao menos duas vezes. No Dataset do CEPEA, foi possível encontrar 954 notícias que tivesse a palavra Soja mencionada ao menos duas vezes, conforme a imagem abaixo:
 <iframe width=700, height=500 frameBorder=0 src="images/soja.html"></iframe>
 
 No Dataset do Notícias Agricolas, foi possível encontrar 3.358 notícias que tivesse a palavra Soja mencionada ao menos duas vezes, conforme a imagem abaixo:
 <iframe width=700, height=500 frameBorder=0 src="images/soja_na.html"></iframe>
+<figcaption>Gráfico de notícias que mencionam a palavra Soja. <br> (Fonte: Autores, 2023)</figcaption>
 
 ### Rotulação dos dados
 Para realizar a rotulação dos dados, foi utilizado a ferramenta [Label Studio](https://labelstud.io/), que é uma plataforma de marcação de dados (data labeling) de código aberto que permite criar tarefas de marcação de forma simples e escalável. 
@@ -62,54 +65,64 @@ Devido ao grande volume, a equipe optou por classificar apenas as notícias do C
 
 Foi realizado o deployment da ferramenta Label Studio utilizando o serviço de Kubernetes da [Azure](https://azure.microsoft.com/pt-br/), e a rotulação dos dados foi realizada por 4 pessoas do time, conforme a imagem abaixo:
 ![Rotulação dos dados](images/labelstudio_rotulacao.jfif "Momento onde o time atingiu 599 notícias rotuladas")
+    <figcaption>Imagens da plataforma Label Studio. <br> (Fonte: Autores, 2023)</figcaption>
 
 ### Criação do modelo
 Após a rotulação dos dados, foi necessário realizar o treinamento do modelo de Machine Learning, para que fosse possível criar o *Motor de Classificação* do Radar da Soja, que é o responsável por classificar as notícias em Positivo, Neutro ou Negativo. Com a necessidade de desenvolvermos um modelo utilizando BERT (através de redes neurais), o time optou por desenvolver um modelo baseline, para servir de efeito de comparação, utilizando o modelo [Naive Bayes Multinomial](https://scikit-learn.org/stable/modules/naive_bayes.html), que é um modelo de classificação probabilístico baseado no teorema de Bayes, que assume que a presença de uma característica em uma classe não está relacionada com a presença de qualquer outra característica.
 
 #### Modelo Naive Bayes Multinomial (Baseline)
 O modelo Naive Bayes Multinomial foi escolhido por ser um modelo de classificação probabilístico, que é um modelo simples e rápido, que pode ser utilizado como baseline para comparação com outros modelos mais complexos. <br>
+
 No Naive Bayes Multinomial, determinamos a probabilidade de uma notícia pertencer a uma classe, baseado na frequência de palavras que aparecem na notícia.  <br>
-Para o treinamento do modelo, foi utilizado o dataset rotulado (421 notícias), sendo separado em 80% para treino (336 notícias) e 20% (101 notícias) para validação.  <br>
+Para o treinamento do modelo, foi utilizado o dataset rotulado (701 notícias). <br>
+Sendo separado em 80% para treino (560 notícias) e 20% (130 notícias) para validação.  <br>
+
 Após o treinamento, foi possível obter o seguinte reporte de classificação:
 
 <figure>
     <img src="images/modelo_naive_treino.png">
-    <figcaption>Resultado de classificação do modelo no conjunto de teste. (Fonte: Autores, 2023)</figcaption>
+    <figcaption>Resultado de classificação do modelo no conjunto de teste. <br> (Fonte: Autores, 2023)</figcaption>
 </figure>
     
 Enquanto que para o conjunto de validação, foi possível obter o seguinte reporte de classificação:
 <figure>
     <img src="images/modelo_naive_validacao.png">
-    <figcaption>Resultado de classificação do modelo no conjunto de validação. (Fonte: Autores, 2023)</figcaption>
+    <figcaption>Resultado de classificação do modelo no conjunto de validação. <br> (Fonte: Autores, 2023)</figcaption>
 </figure>
 
-Após o treinamento do modelo, foi possível obter uma acurácia de 0.62 no conjunto de teste, e 0.60 no conjunto de validação, o que mostra que o modelo possui uma boa capacidade de generalização, e que pode ser utilizado como baseline para comparação com outros modelos mais complexos.
+Após o treinamento do modelo, foi possível obter uma acurácia de 0.65 no conjunto de teste, e 0.57 no conjunto de validação, o que mostra que o modelo possui uma capacidade média de generalização, e que pode ser utilizado como baseline para comparação com outros modelos mais complexos.
 
 #### Modelo BERT
 Com a crescente utilização de modelos de Deep Learning para a resolução de problemas de NLP, o time optou por utilizar o modelo BERT, que é um modelo de Deep Learning desenvolvido pelo Google, que possui uma arquitetura baseada em redes neurais, e que possui um desempenho superior a outros modelos de NLP, como o Naive Bayes Multinomial. <br>
+
 O modelo BERT é utilizado como um modelo pré-treinado, que é treinado em um grande volume de dados, e que pode ser utilizado para resolver problemas de NLP, como classificação de texto, sumarização de texto, entre outros. <br>
+
 Para a aplicação do modelo no projeto, foi necessário realizar o fine-tuning do modelo, que é o processo de treinar o modelo pré-treinado em um conjunto de dados específico para o problema que se deseja resolver. <br>
-Para o treinamento do modelo, foi utilizado o dataset rotulado (421 notícias), sendo separado em 80% para treino (336 notícias) e 20% (101 notícias) para validação.  <br>
+
+Para o treinamento do modelo, foi utilizado o dataset rotulado (701 notícias). <br> Sendo separado em 80% para treino (562 notícias) e 20% (112 notícias) para validação.  <br>
+
 Após o treinamento, foi possível obter o seguinte reporte de classificação para o conjunto de teste:
 
 
 <figure>
     <img src="images/treinamento_bert.jpg">
-    <figcaption>Resultado de classificação do modelo no conjunto de teste.(Fonte: Autores, 2023)</figcaption>
+    <figcaption>Resultado de classificação do modelo no conjunto de teste. <br> (Fonte: Autores, 2023)</figcaption>
 </figure>
 
 <figure>
     <img src="images/validacao_bert.jpg">
-    <figcaption>Resultado de classificação do modelo no conjunto de teste.(Fonte: Autores, 2023)</figcaption>
+    <figcaption>Resultado de classificação do modelo no conjunto de validação. <br> (Fonte: Autores, 2023)</figcaption>
 </figure>
 
 #### Considerações sobre o modelo
 Após o treinamento dos modelos, foi possível obter os seguintes resultados:
 
-| Modelo | Acurácia no conjunto de teste | Acurácia no conjunto de validação | Precisão - Validação| Recall - Validação | F1-Score - Validação |
-| --- | --- | --- | --- | --- | --- |
-| Naive Bayes Multinomial | 0.62 | 0.60 | 0.70 | 0.57 | 0.54 |
-| BERT | 0.76 | 0.70 | 0.72 | 0.70 | 0.68 |
+| Modelo | Quantidade de Notícias | Acurácia (Teste) | Acurácia (Validação) | Precisão <br> (V) | Recall <br> (V) | F1-Score(V) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Naive Bayes Multinomial | 560 | 0.65 | 0.57 | 0.39 | 0.57 | 0.46 |
+| BERT | 701 | 0.75 | 0.78 | 0.78 | 0.78 | 0.77 |
+
+<sub>V*: Conjunto de validação contendo 30 notícias. O mesmo é executado no Naive e BERT para comparação. </sub>
 
 Por se tratar de um modelo de Deep Learning, o BERT possui uma acurácia superior ao Naive Bayes Multinomial, que é um modelo de Machine Learning tradicional. <br>
 Entretanto, o modelo BERT possui uma precisão inferior ao Naive Bayes Multinomial, o que pode ser explicado pela quantidade de dados de treinamento.
