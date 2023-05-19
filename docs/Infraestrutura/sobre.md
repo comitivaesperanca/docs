@@ -18,7 +18,7 @@ Para executar em Kubernetes, foi necessário criar quatro deployments (Frontend,
 O Deployments é um objeto do Kubernetes que permite a criação de pods e replicações dos mesmos. Para cada serviço do Radar da Soja, foi criado um deployment, que é responsável por criar e gerenciar os pods e replicações dos mesmos.
 
 <figure>
-    <img src="images/deployments_azure.png">
+    <img src="../images/deployments_azure.png">
     <figcaption>Objetos criado no serviço de Kubernetes da Azure (Fonte: Autores, 2023)</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ O Deployments é um objeto do Kubernetes que permite a criação de pods e repli
 O Pod é a menor unidade que pode ser criada e gerenciada no Kubernetes. Um pod é um grupo de um ou mais contêineres, com armazenamento compartilhado (volumes), endereço IP e opções de como executar os contêineres. Ele seria o equivalente a uma máquina virtual, porém com um tamanho muito menor. Para cada serviço do Radar da Soja, foi criado um pod, que é responsável por executar o serviço.
 
 <figure>
-    <img src="images/pods_azure.png">
+    <img src="../images/pods_azure.png">
     <figcaption>Objetos criado no serviço de Kubernetes da Azure (Fonte: Autores, 2023)</figcaption>
 </figure>
 
@@ -35,10 +35,22 @@ O Service é um objeto do Kubernetes que permite a comunicação entre os pods. 
 No serviço de Kubernetes da Azure, foi criado um Load Balancer para cada service, que é responsável por distribuir as requisições entre os pods.
 
 <figure>
-    <img src="images/services_azure.png">
+    <img src="../images/services_azure.png">
     <figcaption>Objetos criado no serviço de Kubernetes da Azure (Fonte: Autores, 2023)</figcaption>
 </figure>
 
 ## PostgreSQL
 O PostgreSQL é um sistema de gerenciamento de banco de dados objeto-relacional (ORDBMS). O PostgreSQL foi escolhido por ser um banco de dados relacional de código aberto, que possui uma grande comunidade e é amplamente utilizado no mercado. Além disso, o PostgreSQL é compatível com o ORM utilizado no Radar da Soja, o Entity Framework Core.
 No Radar da Soja, o PostgreSQL é utilizado para armazenar os dados das notícias e dos usuários.
+
+### Custos com nuvem
+Durante a execução do projeto, apenas o Apache Airflow não teve seu deploy no cluster de Kubernetes. O custo médio por dia ficou em torno de R$ 5.20 reais, sendo que o maior custo foi com o uso de máquinas virtuais, que ficou em torno de R$59.08 reais. O custo total do projeto foi de R$ 115.11. Estimasse que o custo total do projeto seja de R$ 464.82 ao final do mês. O custo total do projeto pode ser visto na imagem abaixo:
+<figure>
+    <img src="../images/forecast.jpg">
+    <figcaption>Projeção de custos (Fonte: Autores, 2023)</figcaption>
+</figure>
+
+<figure>
+    <img src="../images/custos_com_nuvem.jpg">
+    <figcaption>Custo com nuvem durante o desenvolvimento. (Fonte: Autores, 2023)</figcaption>
+</figure>
