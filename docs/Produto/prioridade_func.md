@@ -1,0 +1,1 @@
+Após realizado o *Brainstorming de Funcionalidades*, partimos para a etapa da descoberta do *Radar da Soja*

@@ -10,8 +10,8 @@ A criação desse usuário ideal ajuda os criadores desse produto a entender mel
 *Persona criada utilizando o Figma*
 </center>
 
-Acima está detalhado informações sobre a nossa primeira persona e principal cliente em potencial, o Jorge. <br>
-Utilizamos todos os dados coletados em nossa pesquisa pesquisa para homogenizar, criar e definir um dos possíveis usuários e clientes do Radar da Soja, onde nos atentamos principalmente nos seus *Pontos de dor* e *Objetivos* para criação da nossa aplicação. <br>
+Acima estão detalhadas informações sobre a nossa primeira persona e principal cliente em potencial, o Jorge. <br>
+Utilizamos todos os dados coletados em nossa pesquisa para homogeneizar, criar e definir um dos possíveis usuários e clientes do Radar da Soja. Focamos principalmente em seus pontos de dor e objetivos para criar a nossa aplicação. <br>
 
 
 ### **Breno, o Trader**
@@ -24,11 +24,11 @@ Utilizamos todos os dados coletados em nossa pesquisa pesquisa para homogenizar,
 
 
 Acima está detalhado informações sobre a nossa segunda persona, o Breno. <br>
-Diferentemente do Jorge, essa persona foi mapeada através de conversas com pessoas do mercado de Trading de Commodities que demonstraram interesse com a ideia do produto, além de utilizar dados da pesquisa elaborada. <br>
+Diferentemente do Jorge, que foi criado com base exclusivamente em nossa pesquisa, esta persona foi construída após conversas com pessoas do mercado de Trading de Commodities que demonstraram interesse na ideia do produto. Além disso, também utilizamos os dados coletados em nossa pesquisa para complementar as informações obtidas nas conversas. <br>
 
 ### **Pontos em comum**
 
-Após definição das nossas duas personas, encontramos pontos em comum entre elas, mesmo sendo de áreas diferentes dentro do comércio da Soja. <br>
+Após definirmos as nossas duas personas, percebemos que existem pontos em comum entre elas, mesmo pertencendo a áreas diferentes dentro do mercado de Soja. <br>
 
 Abaixo segue os pontos em comum que foram encontrados e utilizados de guia para o desenvolvimento do *Radar da Soja*:
 
