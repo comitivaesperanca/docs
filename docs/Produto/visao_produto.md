@@ -1,4 +1,4 @@
-Considerando os dados coletados nas pesquisas de mercado, onde encontramos uma grande insastificação dos pesquisados com a imprevisibilidade do mercado da soja e com notícias que afetam diretamente as operações de compra e venda da Soja, nós da equipe **Comitiva Esperança**, idealizamos um produto que atenda um problema e atenda as necessidades das personas que nós criamos.
+Ao analisarmos os dados coletados em nossas pesquisas de mercado, observamos que há uma grande insatisfação dos entrevistados com a imprevisibilidade do mercado da soja, além do impacto negativo de algumas notícias sobre as operações de compra e venda desse produto. Com base nesses insights, a equipe da **Comitiva Esperança** idealizou um produto que soluciona esses problemas e atende às necessidades de Jorge e Breno, nossas personas.
 
 Com todas essas informações nós desenvolvemos uma das etapas do método de descoberta de produto chamado *Lean Inception*, que é a definição da *Visão do Produto* para que a nossa ideia seja clara e objetiva e, com essa visão inicial e detalhada, possamos guiar todas as funcionalidades do nosso produto para que atendam essão definição inicial.
 
