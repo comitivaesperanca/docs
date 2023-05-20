@@ -11,3 +11,28 @@ Abaixo está detalhado o nosso Roadmap do Produto, onde estão separados ativida
 <center>![roapmap_atual](images/roadmap.jpg)
 *Quadro criado utilizando o Miro*
 </center>
+
+## Tabela de Versionamento
+<div class="md-typeset__scrollwrap">
+  <div class="md-typeset__table">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Versão</th>
+          <th>Descrição</th>
+          <th>Autor(es)</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>19/05/2023</td>
+        <td>1.0</td>
+        <td>Criação do documento</td>
+        <td><a href="https://www.linkedin.com/in/vitor-lameirao/">Vitor Lameirão</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
