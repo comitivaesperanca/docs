@@ -17,7 +17,7 @@ Organização destinada ao time Comitiva Esperança do programa [</pantanal.dev\
 
 Entre os dias **01/04/2023** e **20/05/2023**, foi realizado o módulo Arara Azul, focado em **Machine Learning**, do programa [</pantanal.dev\>](https://pantanal.dev), um programa desenvolvido por professores da Faculdade de Computação da UFMS em parceira com as empresas [B3 a bolsa do Brasil](https://www.linkedin.com/company/b3_oficial/), [BLK](https://www.linkedin.com/company/blk-b3/), [PDtec](https://www.linkedin.com/company/pdtec-b3/) e [Neoway](https://www.linkedin.com/company/neoway/). <br>
 Durante esse período foi proposto a nós do time Comitiva Esperança e a outras 9 equipes, o desafio de ***"Treinar um algoritmo de Machine Learning capaz de classificar o sentimento de textos de notícias de Jornais ou Redes Sociais em (Positivo, Neutro ou Negativo)"***. <br> 
-Cabia a cada time definir e construir um produto queresolva um problema real e entregue valor aos seus usuários com esse modelo proposto. <br>
+Cabia a cada time definir e construir um produto que resolva um problema real e entregue valor aos seus usuários com esse modelo proposto. <br>
 
 ## **Participantes** 🙋‍♀️🙋‍♂️
 
