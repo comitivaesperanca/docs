@@ -73,6 +73,14 @@ O time Comitiva Esperança é composto por 4 pessoas, de áreas multidisciplinar
   </table>
   </div>
   </div>
+          
+## Repositórios
+As aplicações da plataforma está dividida em quatro repositórios, como:
+
+- [Dados](https://github.com/comitivaesperanca/data)
+- [Backend](https://github.com/comitivaesperanca/backend)
+- [Frontend](https://github.com/comitivaesperanca/frontend)
+- [Documentação](https://github.com/comitivaesperanca/docs)
 
 ## Tabela de Versionamento
 <div class="md-typeset__scrollwrap">
